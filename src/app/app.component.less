@@ -6,15 +6,29 @@ mat-sidenav {
     width: 200px;
 }
 
-a {
-    color: white;
-    text-decoration: none;
+mat-sidenav-content {
+    mat-toolbar {
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
 }
 
 mat-icon:hover {
     color: lightgray;
 }
 
+a {
+    text-decoration: none;
+}
+
 a:hover, a:active {
     color: lightgray;
+}
+
+li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
 }
