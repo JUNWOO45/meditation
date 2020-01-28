@@ -6,20 +6,23 @@ import { AppComponent } from './app.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatSliderModule } from '@angular/material'
+import { MaterialModule } from './material.module';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { TrainingComponent } from './training/training.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
+    WelcomeComponent,
+    TrainingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule,
-    MatSliderModule
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
