@@ -1,5 +1,26 @@
-<h1>meditation</h1>
-
-<!-- <button mat-flat-button color="primary">Click me!</button> -->
-
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav>사이드바</mat-sidenav>
+  <mat-sidenav-content>
+    <!-- <button (click)="sidenav.toggle()">btn</button> -->
+    <mat-toolbar color="primary" fxLayoutGap="20px">
+        <div>
+            <button (click)="sidenav.toggle()">btn</button>
+        </div>
+        <div>
+            <a routerLink="/">홈</a>
+        </div>
+        <div>
+            <a routerLink="signup">회원가입</a>
+        </div>
+        <div>
+            <a routerLink="login">로그인</a>
+        </div>
+        <div>
+            <a routerLink="training">명상</a>
+        </div>
+    </mat-toolbar>
+    <main>
+        <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
