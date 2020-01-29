@@ -1,28 +1,9 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav>
-    <mat-list role="list" (click)="sidenav.close()">
-        <a mat-list-item routerLink="training">명상</a>
-        <a mat-list-item routerLink="signup">회원가입</a>
-        <a mat-list-item routerLink="login">로그인</a>
-        <mat-list-item><button mat-raised-button>로그아웃</button></mat-list-item>
-    </mat-list>
+    <app-sidebar (sidenavClosed)="sidenav.close()"></app-sidebar>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary" fxLayoutGap="20px">
-        <div fxHide.gt-xs>
-            <button mat-icon-button (click)="sidenav.toggle()">
-                <mat-icon>menu</mat-icon>
-            </button>
-        </div>
-        <div>
-            <a routerLink="/">홈</a>
-        </div>
-        <div fxFlex fxLayoutAlign="flex-end" fxLayoutGap="10px" fxHide.xs>
-            <a routerLink="training">명상</a>
-            <a routerLink="signup">회원가입</a>
-            <a routerLink="login">로그인</a>
-        </div>
-    </mat-toolbar>
+    <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
     <main>
         <router-outlet></router-outlet>
     </main>

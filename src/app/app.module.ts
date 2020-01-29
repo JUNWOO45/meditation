@@ -11,6 +11,8 @@ import { MaterialModule } from './material.module';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { TrainingComponent } from './training/training.component';
 import { FormsModule } from '@angular/forms';
+import { SidebarComponent } from './navigation/sidebar/sidebar.component';
+import { HeaderComponent } from './navigation/header/header.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { FormsModule } from '@angular/forms';
     SignupComponent,
     LoginComponent,
     WelcomeComponent,
-    TrainingComponent
+    TrainingComponent,
+    SidebarComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
