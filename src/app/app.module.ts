@@ -14,6 +14,8 @@ import { FormsModule } from '@angular/forms';
 import { SidebarComponent } from './navigation/sidebar/sidebar.component';
 import { HeaderComponent } from './navigation/header/header.component';
 
+import { MatVideoModule } from 'mat-video';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,8 @@ import { HeaderComponent } from './navigation/header/header.component';
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
-    FormsModule
+    FormsModule,
+    MatVideoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
