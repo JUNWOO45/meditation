@@ -1,4 +1,9 @@
-<p>training works!</p>
+<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle (click)="rain(audio)">빗소리</mat-button-toggle>
+    <mat-button-toggle (click)="beach(audio)">파도소리</mat-button-toggle>
+    <mat-button-toggle (click)="stop(audio)">정지</mat-button-toggle>
+    <mat-button-toggle (click)="replay(audio)">재생</mat-button-toggle>
+</mat-button-toggle-group>
 
 <mat-video 
     [autoplay]="true" 
@@ -18,6 +23,3 @@
 <audio controls autoplay #audio>
     <source [src]="currentAudio" type="audio/mpeg">
 </audio>
-
-<button (click)="rain(audio)">rain</button>
-<button (click)="beach(audio)">beach</button>

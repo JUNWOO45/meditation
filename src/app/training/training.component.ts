@@ -20,7 +20,6 @@ export class TrainingComponent implements OnInit {
   }
 
   rain(audio) {
-    console.log(audio);
     this.currentVideo = this.rainVideo;
     this.currentAudio = this.rainAudio;
     audio.load();
@@ -31,6 +30,14 @@ export class TrainingComponent implements OnInit {
     this.currentVideo = this.beachVideo;
     this.currentAudio = this.beachAudio;
     audio.load();
+    audio.play();
+  }
+
+  stop(audio) {
+    audio.pause();
+  }
+
+  replay(audio) {
     audio.play();
   }
 }
