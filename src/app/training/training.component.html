@@ -1,17 +1,23 @@
 <p>training works!</p>
 
-<!-- <mat-video src="../../assets/rain.mp4"></mat-video> -->
-
-<mat-video title="My Tutorial Title" [autoplay]="true" [preload]="true" [fullscreen]="true" [download]="false" color="accent" spinner="spin" poster="image.jpg" [loop]="true">
-    <source matVideoSource src="../../assets/rain.mp4" type="video/mp4">
+<mat-video 
+    [autoplay]="true" 
+    [preload]="true" 
+    [fullscreen]="true" 
+    [download]="false" 
+    color="accent" 
+    spinner="spin" 
+    poster="image.jpg" 
+    [loop]="true">
+    <source matVideoSource [src]="currentVideo" type="video/mp4">
     <source src="tutorial.webm" type="video/webm">
     <track matVideoTrack src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
     <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
 </mat-video>
 
-<!-- <video width="320" height="240" controls>
-    <source src="../../assets/rain.mp4" type="video/mp4">
-</video> -->
-<audio controls>
-    <source src="../../assets/rain.mp3" type="audio/mpeg">
+<audio controls autoplay #audio>
+    <source [src]="currentAudio" type="audio/mpeg">
 </audio>
+
+<button (click)="rain(audio)">rain</button>
+<button (click)="beach(audio)">beach</button>
