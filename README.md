@@ -14,6 +14,12 @@
 
 ### ✨ [Demo](https://meditation-for-developer.firebaseapp.com)
 
+## TODO
+
+* 비디오를 background에서 보이도록 수정 - 모바일환경에서 특히 불편
+* 회원가입, 로그인 기능 구현 - firebase authentication 사용
+* 사용자인증기능 구현 후, 지난 명상 or 통계 탭 구현
+
 ## Install
 
 ```sh
