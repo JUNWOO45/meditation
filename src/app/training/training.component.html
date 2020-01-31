@@ -1,8 +1,16 @@
 <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-    <mat-button-toggle (click)="rain(audio)">빗소리</mat-button-toggle>
-    <mat-button-toggle (click)="beach(audio)">파도소리</mat-button-toggle>
-    <mat-button-toggle (click)="stop(audio)">정지</mat-button-toggle>
-    <mat-button-toggle (click)="replay(audio)">재생</mat-button-toggle>
+    <mat-button-toggle (click)="rain(audio)">
+        <i class="fas fa-cloud-rain"></i>
+    </mat-button-toggle>
+    <mat-button-toggle (click)="beach(audio)">
+        <i class="fas fa-umbrella-beach"></i>
+    </mat-button-toggle>
+    <mat-button-toggle (click)="replay(audio)">
+        <i class="fas fa-play"></i>
+    </mat-button-toggle>
+    <mat-button-toggle (click)="stop(audio)">
+        <i class="fas fa-pause"></i>
+    </mat-button-toggle>
 </mat-button-toggle-group>
 
 <mat-video 
@@ -13,13 +21,15 @@
     color="accent" 
     spinner="spin" 
     poster="image.jpg" 
-    [loop]="true">
+    [loop]="true"
+    class="myVideo">
     <source matVideoSource [src]="currentVideo" type="video/mp4">
-    <source src="tutorial.webm" type="video/webm">
+    <!-- <source src="tutorial.webm" type="video/webm">
     <track matVideoTrack src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
-    <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+    <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian"> -->
 </mat-video>
 
-<audio controls autoplay #audio>
+<audio autoplay #audio>
     <source [src]="currentAudio" type="audio/mpeg">
 </audio>
+
