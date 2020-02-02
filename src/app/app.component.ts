@@ -14,11 +14,11 @@ export class AppComponent implements OnInit{
   isDarkTheme: Observable<boolean>;
 
   constructor(
-    private background: ThemeService
+    private themeService: ThemeService
   ) {
   }
 
   ngOnInit() {
-    this.isDarkTheme = this.background.isDarkTheme;
+    this.isDarkTheme = this.themeService.isDarkTheme;
   }
 }

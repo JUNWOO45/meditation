@@ -9,7 +9,7 @@ import { ThemeService } from 'src/app/theme.service';
 export class HeaderComponent implements OnInit {
 
   @Output() sidenavToggle = new EventEmitter();
-  constructor(private background: ThemeService) { }
+  constructor(private themeService: ThemeService) { }
 
   ngOnInit() {
   }
@@ -18,6 +18,6 @@ export class HeaderComponent implements OnInit {
     this.sidenavToggle.emit();
   }
   toggleDarkTheme(checked: boolean) {
-    this.background.setDarkTheme(checked);
+    this.themeService.setDarkTheme(checked);
   }
 }
