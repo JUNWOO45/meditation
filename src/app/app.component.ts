@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { BackgroundServiceService } from './background-service.service';
+
 import { Observable } from 'rxjs';
+import { ThemeService } from './theme.service';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,7 @@ export class AppComponent implements OnInit{
   isDarkTheme: Observable<boolean>;
 
   constructor(
-    private background: BackgroundServiceService
+    private background: ThemeService
   ) {
   }
 

@@ -9,7 +9,6 @@ $theme: mat-light-theme($primary, $accent, $warn);
 
 @include angular-material-theme($theme);
 
-// Our dark theme
 .dark-theme {
   color: $light-primary-text;
   $dark-primary: mat-palette($mat-yellow);

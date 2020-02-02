@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { BackgroundServiceService } from '../background-service.service';
-import { Observable } from 'rxjs';
+import { Component } from '@angular/core';
+import { ThemeService } from '../theme.service';
 
 @Component({
   selector: 'app-welcome',
@@ -10,7 +9,7 @@ import { Observable } from 'rxjs';
 export class WelcomeComponent {
 
   constructor(
-    private background: BackgroundServiceService
+    private background: ThemeService
   ) { }
 
   toggleDarkTheme(checked: boolean) {
