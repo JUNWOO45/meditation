@@ -14,6 +14,11 @@
 
 ### ✨ [Demo](https://meditation-for-developer.firebaseapp.com)
 
+## 기능
+
+* 바닷소리, 빗소리 명상
+* 다크모드 지원
+
 ## TODO
 
 * Welcome 컴포넌트 삭제 - WOW페이지 빠르게 접근
