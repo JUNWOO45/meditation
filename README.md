@@ -16,6 +16,7 @@
 
 ## TODO
 
+* Welcome 컴포넌트 삭제 - WOW페이지 빠르게 접근
 * 비디오를 background에서 보이도록 수정 - 모바일환경에서 특히 불편
 * 회원가입, 로그인 기능 구현 - firebase authentication 사용
 * 사용자인증기능 구현 후, 지난 명상 or 통계 탭 구현

@@ -1,15 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { BackgroundServiceService } from '../background-service.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.component.html',
   styleUrls: ['./welcome.component.less']
 })
-export class WelcomeComponent implements OnInit {
+export class WelcomeComponent {
 
-  constructor() { }
+  constructor(
+    private background: BackgroundServiceService
+  ) { }
 
-  ngOnInit() {
+  toggleDarkTheme(checked: boolean) {
+    this.background.setDarkTheme(checked);
   }
-
 }
