@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ThemeService } from 'src/app/theme.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-sidebar',
