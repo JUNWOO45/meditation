@@ -21,9 +21,11 @@ export class HeaderComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit() {
+    console.log('this.isAuth : ', this.isAuth);
     this.isDarkTheme = this.themeService.isDarkTheme;
     this.authSubscription = this.authService.authChange.subscribe(authStatus => {
       this.isAuth = authStatus;
+      console.log('AFTER : ', this.isAuth);
     })
   }
 
@@ -32,6 +34,10 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
   toggleDarkTheme(checked: boolean) {
     this.themeService.setDarkTheme(checked);
+  }
+
+  logout() {
+    this.authService.logout();
   }
 
   ngOnDestroy() {
