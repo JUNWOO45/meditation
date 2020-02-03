@@ -11,7 +11,7 @@ export class TrainingComponent implements OnInit {
 
   rainVideo = '../../assets/rain.mp4';
   beachVideo = '../../assets/beach.mp4';
-  
+
   rainAudio = '../../assets/rain.mp3';
   beachAudio = '../../assets/beach.mp3';
   constructor() { }
