@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+
+import { User } from '../auth/user.model';
 
 @Component({
   selector: 'app-welcome',
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./welcome.component.less']
 })
 export class WelcomeComponent {
+  constructor(
+  ) {
 }

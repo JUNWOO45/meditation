@@ -15,6 +15,7 @@ import { SidebarComponent } from './navigation/sidebar/sidebar.component';
 import { HeaderComponent } from './navigation/header/header.component';
 
 import { MatVideoModule } from 'mat-video';
+import { AuthService } from './auth/auth.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { MatVideoModule } from 'mat-video';
     FormsModule,
     MatVideoModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

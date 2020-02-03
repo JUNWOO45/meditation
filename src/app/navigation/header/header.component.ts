@@ -1,19 +1,30 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, OnDestroy } from '@angular/core';
 import { ThemeService } from 'src/app/theme.service';
-import { Observable } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
+import { AuthService } from 'src/app/auth/auth.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.less']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, OnDestroy {
   isDarkTheme: Observable<boolean>;
   @Output() sidenavToggle = new EventEmitter();
-  constructor(private themeService: ThemeService) { }
+
+  isAuth: boolean = false;
+  authSubscription: Subscription;
+
+  constructor(
+    private themeService: ThemeService,
+    private authService: AuthService
+  ) { }
 
   ngOnInit() {
     this.isDarkTheme = this.themeService.isDarkTheme;
+    this.authSubscription = this.authService.authChange.subscribe(authStatus => {
+      this.isAuth = authStatus;
+    })
   }
 
   onToggleSidenav() {
@@ -21,5 +32,10 @@ export class HeaderComponent implements OnInit {
   }
   toggleDarkTheme(checked: boolean) {
     this.themeService.setDarkTheme(checked);
+  }
+
+  ngOnDestroy() {
+    this.authSubscription.unsubscribe();
+    console.log('unsubscribed!!');
   }
 }
