@@ -10,7 +10,6 @@
 
 > Simple Angular Meditation App 
 
-### 🏠 [Homepage](https://meditation-for-developer.firebaseapp.com)
 
 ### ✨ [Demo](https://meditation-for-developer.firebaseapp.com)
 
