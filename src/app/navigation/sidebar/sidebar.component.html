@@ -3,4 +3,8 @@
     <a mat-list-item routerLink="signup">회원가입</a>
     <a mat-list-item routerLink="login">로그인</a>
     <mat-list-item><button mat-raised-button>로그아웃</button></mat-list-item>
+    <mat-slide-toggle 
+        [checked]="isDarkTheme | async" 
+        (change)="toggleDarkTheme($event.checked)">
+    </mat-slide-toggle>
 </mat-list>
