@@ -4,13 +4,13 @@
         fxLayout="column" 
         fxLayoutAlign="center center"
         fxLayoutGap="10px"
-        #signupFormData="ngForm"
-        (ngSubmit)="onSubmit(signupFormData)">
+        [formGroup]="signupForm"
+        (ngSubmit)="signUp()">
         <mat-form-field fxLayout="column">
-            <input matInput type="email" placeholder="이메일" ngModel name="email">
+            <input matInput type="email" placeholder="이메일" formControlName="email">
         </mat-form-field>
         <mat-form-field>
-            <input matInput type="password" placeholder="비밀번호" ngModel name="password">
+            <input matInput type="password" placeholder="비밀번호" formControlName="password">
         </mat-form-field>
 
         <button type="submit" mat-raised-button color="primary">회원가입</button>

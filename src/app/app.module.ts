@@ -10,7 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { TrainingComponent } from './training/training.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SidebarComponent } from './navigation/sidebar/sidebar.component';
 import { HeaderComponent } from './navigation/header/header.component';
 
@@ -34,7 +34,8 @@ import { AuthService } from './auth/auth.service';
     MaterialModule,
     FlexLayoutModule,
     FormsModule,
-    MatVideoModule
+    MatVideoModule,
+    ReactiveFormsModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

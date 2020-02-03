@@ -1,18 +1,18 @@
 <section class="signup-container">
-        <form 
-            class="form-container" 
-            fxLayout="column" 
-            fxLayoutAlign="center center"
-            fxLayoutGap="5px"
-            #loginFormData="ngForm"
-            (ngSubmit)="login(loginFormData)">
-            <mat-form-field fxLayout="column">
-                <input matInput type="email" placeholder="이메일" ngModel name="email">
-            </mat-form-field>
-            <mat-form-field>
-                <input matInput type="password" placeholder="비밀번호" ngModel name="password">
-            </mat-form-field>
-    
-            <button type="submit" mat-raised-button color="primary">로그인</button>
-        </form>
-    </section>
+    <form 
+        class="form-container" 
+        fxLayout="column" 
+        fxLayoutAlign="center center"
+        fxLayoutGap="5px"
+        [formGroup]="loginForm"
+        (ngSubmit)="login()">
+        <mat-form-field fxLayout="column">
+            <input matInput type="email" placeholder="이메일" formControlName="email">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type="password" placeholder="비밀번호" formControlName="password">
+        </mat-form-field>
+
+        <button type="submit" mat-raised-button color="primary">로그인</button>
+    </form>
+</section>
