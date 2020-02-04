@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to meditation 👋</h1>
 <p>
-  <a href="https://www.npmjs.com/package/meditation" target="_blank">
+  <a href="https://meditation-for-developer.firebaseapp.com/" target="_blank">
     <img alt="Version" src="https://img.shields.io/badge/meditation-1.0.0-brightgreen">
   </a>
   <a href="#" target="_blank">
