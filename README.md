@@ -1,29 +1,28 @@
 <h1 align="center">Welcome to meditation 👋</h1>
 <p>
   <a href="https://www.npmjs.com/package/meditation" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/meditation.svg">
+    <img alt="Version" src="https://img.shields.io/badge/meditation-1.0.0-brightgreen">
   </a>
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
 </p>
 
-> Simple Angular Meditation App 
-
+> Simple Angular Meditation Application 
 
 ### ✨ [Demo](https://meditation-for-developer.firebaseapp.com)
 
-## 기능
+## Feature
 
 * 바닷소리, 빗소리 명상
 * 다크모드 지원
 
-## TODO
+## Todo
 
 * Welcome 컴포넌트 삭제 - WOW페이지 빠르게 접근
 * 비디오를 background에서 보이도록 수정 - 모바일환경에서 특히 불편
 * 회원가입, 로그인 기능 구현 - firebase authentication 사용
-* 사용자인증기능 구현 후, 지난 명상 or 통계 탭 구현
+* 사용자인증 구현 후, 지난 명상 or 통계 탭 구현
 
 ## Install
 
@@ -37,22 +36,6 @@ npm install
 npm run start
 ```
 
-## Run tests
-
-```sh
-npm run test
-```
-
-## Author
-
-👤 **junwoo45**
-
-* Website: https://junwoo45.github.io
-* Github: [@junwoo45](https://github.com/junwoo45)
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+## Release Note
+0.0.1
+* 
