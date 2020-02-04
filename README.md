@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to meditation 👋</h1>
 <p>
   <a href="https://meditation-for-developer.firebaseapp.com/" target="_blank">
-    <img alt="Version" src="https://img.shields.io/badge/meditation-1.0.0-brightgreen">
+    <img alt="Version" src="https://img.shields.io/badge/meditation-0.0.3-brightgreen">
   </a>
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
@@ -37,5 +37,13 @@ npm run start
 ```
 
 ## Release Note
+0.0.3
+* 로그인 및 로그아웃 (더미) 테스트 및 라우팅 처리
+* Angular CanActivate 가드 사용 -> 미로그인 시 명상 탭 접근 권한 검사
+
+0.0.2
+* 다크모드 추가
+
 0.0.1
-* 
+* 모바일 환경 대응
+* 빗소리 / 바닷소리 오디오 및 비디오 추가
