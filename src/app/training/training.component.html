@@ -1,16 +1,37 @@
-<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+<!-- 토글보다는 체크박스가 낫겠어. 근데 체크박스보다 버튼토글이 더 이쁠 것 같긴해. -->
+<!-- <mat-button-toggle-group 
+  name="fontStyle" 
+  aria-label="Font Style" 
+  multiple="true" >
     <mat-button-toggle (click)="onClickRain()">
         <i class="fas fa-cloud-rain"></i>
     </mat-button-toggle>
     <mat-button-toggle (click)="onClickBeach()">
         <i class="fas fa-umbrella-beach"></i>
     </mat-button-toggle>
-</mat-button-toggle-group>
+</mat-button-toggle-group> -->
+
+<section class="checkbox-container">
+
+  <mat-checkbox (click)="onClickRain()">
+    <i class="fas fa-cloud-rain"></i>  빗소리
+  </mat-checkbox>
+
+  <mat-checkbox (click)="onClickBeach()">
+    <i class="fas fa-umbrella-beach"></i>  파도소리
+  </mat-checkbox>
+
+  <mat-checkbox (click)="onClickCommuterTrain()">
+      <i class="fas fa-train"></i>  통근길
+  </mat-checkbox>
+</section>
 
 <audio #rain>
     <source [src]="rainAudio" type="audio/mpeg">
 </audio>
-
 <audio #beach>
     <source [src]="beachAudio" type="audio/mpeg">
+</audio>
+<audio #commuterTrain>
+    <source [src]="commuterTrainAudio" type="audio/mpeg">
 </audio>
