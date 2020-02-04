@@ -17,6 +17,11 @@ import { HeaderComponent } from './navigation/header/header.component';
 import { MatVideoModule } from 'mat-video';
 import { AuthService } from './auth/auth.service';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+
+import { environment } from '../environments/environment'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +40,8 @@ import { AuthService } from './auth/auth.service';
     FlexLayoutModule,
     FormsModule,
     MatVideoModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
