@@ -1,8 +1,14 @@
 import { User } from './user.model';
 import { AuthData } from './auth-data.model';
 import { Subject } from 'rxjs';
+import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 
+@Injectable()
 export class AuthService {
+    constructor(
+        private router: Router
+    ) {}
     authChange = new Subject<boolean>();
 
     private user: User = {
@@ -17,6 +23,7 @@ export class AuthService {
         };
 
         this.authChange.next(true);
+        this.router.navigate(['/training']);
     }
 
     login(authData: AuthData) {
@@ -26,6 +33,7 @@ export class AuthService {
         };
 
         this.authChange.next(true);
+        this.router.navigate(['/training']);
     }
 
     logout() {
