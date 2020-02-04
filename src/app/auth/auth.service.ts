@@ -11,10 +11,7 @@ export class AuthService {
     ) {}
     authChange = new Subject<boolean>();
 
-    private user: User = {
-        email: 'hi',
-        userId: Math.round(Math.random() * 10000).toString()
-    };;
+    private user: User;
 
     registerUser(authData: AuthData) {
         this.user = {
