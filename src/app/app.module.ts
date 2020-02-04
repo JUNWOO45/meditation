@@ -41,7 +41,7 @@ import { environment } from '../environments/environment'
     FormsModule,
     MatVideoModule,
     ReactiveFormsModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig)
+    // AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

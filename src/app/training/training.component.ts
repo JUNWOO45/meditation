@@ -7,14 +7,16 @@ import { Component, OnInit, ViewChild, ElementRef, Renderer2 } from '@angular/co
 })
 export class TrainingComponent {
   rainAudio = '../../assets/rain.mp3';
-  beachAudio = '../../assets/beach.mp3';
+  summerBeachAudio = '../../assets/summer_beach.mp3';
   commuterTrainAudio = '../../assets/commuter_train.mp3';
   hairCutAudio = '../../assets/haircut.mp3';
+  winterWaveAudio = '../../assets/winter_wave.mp3';
 
   @ViewChild('rain', null) private clickedRain: ElementRef;
   @ViewChild('beach', null) private clickedBeach: ElementRef;
   @ViewChild('commuterTrain', null) private clickedCommuterTrain: ElementRef;
   @ViewChild('hairCut', null) private clickedHairCut: ElementRef;
+  @ViewChild('winterWave', null) private clickedWinterWave: ElementRef;
 
   constructor(private renderer: Renderer2) { }
 
@@ -39,5 +41,10 @@ export class TrainingComponent {
     this.clickedHairCut.nativeElement.paused ?
     this.clickedHairCut.nativeElement.play() :
     this.clickedHairCut.nativeElement.pause()
+  }
+  onClickWinterWave() {
+    this.clickedWinterWave.nativeElement.paused ?
+    this.clickedWinterWave.nativeElement.play() :
+    this.clickedWinterWave.nativeElement.pause()
   }
 }

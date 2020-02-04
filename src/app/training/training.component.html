@@ -18,7 +18,7 @@
   </mat-checkbox>
 
   <mat-checkbox (click)="onClickBeach()">
-    <i class="fas fa-umbrella-beach"></i>  파도소리
+    <i class="fas fa-umbrella-beach"></i>  여름 해변
   </mat-checkbox>
 
   <mat-checkbox (click)="onClickCommuterTrain()">
@@ -28,17 +28,24 @@
   <mat-checkbox (click)="onClickHairCut()">
       <i class="fas fa-cut"></i>  머리 자르는 소리
   </mat-checkbox>
+
+  <mat-checkbox (click)="onClickWinterWave()">
+      <i class="fas fa-water"></i>  겨울바다 파도소리
+  </mat-checkbox>
 </section>
 
 <audio #rain loop>
     <source [src]="rainAudio" type="audio/mpeg">
 </audio>
 <audio #beach loop>
-    <source [src]="beachAudio" type="audio/mpeg">
+    <source [src]="summerBeachAudio" type="audio/mpeg">
 </audio>
 <audio #commuterTrain loop>
     <source [src]="commuterTrainAudio" type="audio/mpeg">
 </audio>
 <audio #hairCut loop>
     <source [src]="hairCutAudio" type="audio/mpeg">
+</audio>
+<audio #winterWave loop>
+    <source [src]="winterWaveAudio" type="audio/mpeg">
 </audio>
