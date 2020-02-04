@@ -1,36 +1,16 @@
 <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-    <mat-button-toggle (click)="rain(audio)">
+    <mat-button-toggle (click)="onClickRain()">
         <i class="fas fa-cloud-rain"></i>
     </mat-button-toggle>
-    <mat-button-toggle (click)="beach(audio)">
+    <mat-button-toggle (click)="onClickBeach()">
         <i class="fas fa-umbrella-beach"></i>
-    </mat-button-toggle>
-    <mat-button-toggle (click)="replay(audio)">
-        <i class="fas fa-play"></i>
-    </mat-button-toggle>
-    <mat-button-toggle (click)="stop(audio)">
-        <i class="fas fa-pause"></i>
     </mat-button-toggle>
 </mat-button-toggle-group>
 
-<mat-video 
-    [autoplay]="true" 
-    [preload]="true" 
-    [fullscreen]="true" 
-    [download]="false" 
-    color="accent" 
-    spinner="spin" 
-    poster="image.jpg" 
-    [loop]="true"
-    [overlay]="false"
-    class="myVideo">
-    <source matVideoSource [src]="currentVideo" type="video/mp4">
-    <!-- <source src="tutorial.webm" type="video/webm">
-    <track matVideoTrack src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
-    <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian"> -->
-</mat-video>
-
-<audio autoplay #audio>
-    <source [src]="currentAudio" type="audio/mpeg">
+<audio #rain>
+    <source [src]="rainAudio" type="audio/mpeg">
 </audio>
 
+<audio #beach>
+    <source [src]="beachAudio" type="audio/mpeg">
+</audio>

@@ -12,7 +12,7 @@ export const environment = {
     storageBucket: "meditation-for-developer.appspot.com",
     messagingSenderId: "765513119996",
     appId: "1:765513119996:web:bcc010cda5e7167116bf79"
-  };
+  }
 };
 
 /*
