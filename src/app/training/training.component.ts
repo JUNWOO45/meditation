@@ -9,10 +9,12 @@ export class TrainingComponent {
   rainAudio = '../../assets/rain.mp3';
   beachAudio = '../../assets/beach.mp3';
   commuterTrainAudio = '../../assets/commuter_train.mp3';
+  hairCutAudio = '../../assets/haircut.mp3';
 
   @ViewChild('rain', null) private clickedRain: ElementRef;
   @ViewChild('beach', null) private clickedBeach: ElementRef;
   @ViewChild('commuterTrain', null) private clickedCommuterTrain: ElementRef;
+  @ViewChild('hairCut', null) private clickedHairCut: ElementRef;
 
   constructor(private renderer: Renderer2) { }
 
@@ -29,9 +31,13 @@ export class TrainingComponent {
   }
 
   onClickCommuterTrain() {
-    console.log('train')
     this.clickedCommuterTrain.nativeElement.paused ?
     this.clickedCommuterTrain.nativeElement.play() :
     this.clickedCommuterTrain.nativeElement.pause()
+  }
+  onClickHairCut() {
+    this.clickedHairCut.nativeElement.paused ?
+    this.clickedHairCut.nativeElement.play() :
+    this.clickedHairCut.nativeElement.pause()
   }
 }

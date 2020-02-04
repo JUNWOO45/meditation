@@ -24,14 +24,21 @@
   <mat-checkbox (click)="onClickCommuterTrain()">
       <i class="fas fa-train"></i>  통근길
   </mat-checkbox>
+
+  <mat-checkbox (click)="onClickHairCut()">
+      <i class="fas fa-cut"></i>  머리 자르는 소리
+  </mat-checkbox>
 </section>
 
-<audio #rain>
+<audio #rain loop>
     <source [src]="rainAudio" type="audio/mpeg">
 </audio>
-<audio #beach>
+<audio #beach loop>
     <source [src]="beachAudio" type="audio/mpeg">
 </audio>
-<audio #commuterTrain>
+<audio #commuterTrain loop>
     <source [src]="commuterTrainAudio" type="audio/mpeg">
+</audio>
+<audio #hairCut loop>
+    <source [src]="hairCutAudio" type="audio/mpeg">
 </audio>
