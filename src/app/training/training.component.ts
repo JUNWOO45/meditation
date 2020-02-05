@@ -42,7 +42,7 @@ export class TrainingComponent {
   onClickHairCut() {
     this.clickedHairCut.nativeElement.paused ?
     this.clickedHairCut.nativeElement.play() :
-    this.clickedHairCut.nativeElement.pause()
+    this.clickedHairCut.nativeElement.pause();
   }
   onClickWinterWave() {
     this.clickedWinterWave.nativeElement.paused ?
