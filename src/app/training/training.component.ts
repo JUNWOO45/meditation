@@ -25,13 +25,13 @@ export class TrainingComponent {
   onClickRain() {
     this.clickedRain.nativeElement.paused ?
     this.clickedRain.nativeElement.play() :
-    this.clickedRain.nativeElement.pause()
+    this.clickedRain.nativeElement.pause();
   }
 
   onClickBeach() {
     this.clickedBeach.nativeElement.paused ?
     this.clickedBeach.nativeElement.play() :
-    this.clickedBeach.nativeElement.pause()
+    this.clickedBeach.nativeElement.pause();
   }
 
   onClickCommuterTrain() {
