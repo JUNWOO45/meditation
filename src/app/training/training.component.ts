@@ -37,7 +37,7 @@ export class TrainingComponent {
   onClickCommuterTrain() {
     this.clickedCommuterTrain.nativeElement.paused ?
     this.clickedCommuterTrain.nativeElement.play() :
-    this.clickedCommuterTrain.nativeElement.pause()
+    this.clickedCommuterTrain.nativeElement.pause();
   }
   onClickHairCut() {
     this.clickedHairCut.nativeElement.paused ?
@@ -47,7 +47,7 @@ export class TrainingComponent {
   onClickWinterWave() {
     this.clickedWinterWave.nativeElement.paused ?
     this.clickedWinterWave.nativeElement.play() :
-    this.clickedWinterWave.nativeElement.pause()
+    this.clickedWinterWave.nativeElement.pause();
   }
   onClickMorningBirds() {
     this.clickedMorningBirds.nativeElement.paused ?
