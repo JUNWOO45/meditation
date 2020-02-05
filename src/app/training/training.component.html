@@ -1,26 +1,33 @@
-<section class="checkbox-container">
-  <mat-checkbox (click)="onClickRain()">
-    <i class="fas fa-cloud-rain"></i>  빗소리
-  </mat-checkbox>
-  
-  <mat-checkbox (click)="onClickBeach()">
-    <i class="fas fa-umbrella-beach"></i>  여름 해변
-  </mat-checkbox>
+<section class="toggle-btn-container">
+  <mat-button-toggle class="btn-toggle" (click)="onClickRain()">
+    <img src="../../assets/icon/rain.svg">
+  </mat-button-toggle>
+  빗소리
 
-  <mat-checkbox (click)="onClickCommuterTrain()">
-      <i class="fas fa-train"></i>  통근길
-  </mat-checkbox>
+  <mat-button-toggle class="btn-toggle" (click)="onClickWinterWave()">
+    <img src="../../assets/icon/winter_wave.svg">
+  </mat-button-toggle>
+  겨울바다 파도소리
 
-  <mat-checkbox (click)="onClickHairCut()">
-      <i class="fas fa-cut"></i>  머리 자르는 소리
-  </mat-checkbox>
+  <mat-button-toggle class="btn-toggle" (click)="onClickBeach()">
+    <img src="../../assets/icon/summer_beach.svg">
+  </mat-button-toggle>
+  여름 해변
 
-  <mat-checkbox (click)="onClickWinterWave()">
-      <i class="fas fa-water"></i>  겨울바다 파도소리
-  </mat-checkbox>
-  <mat-checkbox (click)="onClickMorningBirds()">
-    <i class="fas fa-dove"></i>  아침 새소리
-  </mat-checkbox>
+  <mat-button-toggle class="btn-toggle" (click)="onClickMorningBirds()">
+    <img src="../../assets/icon/morning_birds.svg">
+  </mat-button-toggle>
+  아침 새소리
+
+  <mat-button-toggle class="btn-toggle" (click)="onClickHairCut()">
+    <img src="../../assets/icon/haircut.svg">
+  </mat-button-toggle>
+  머리 자르는 소리
+
+  <mat-button-toggle class="btn-toggle" (click)="onClickCommuterTrain()">
+    <img src="../../assets/icon/commuter_train.svg">
+  </mat-button-toggle>
+  통근 기차 소리
 </section>
 
 <audio #rain loop>
