@@ -18,6 +18,9 @@
   <mat-checkbox (click)="onClickWinterWave()">
       <i class="fas fa-water"></i>  겨울바다 파도소리
   </mat-checkbox>
+  <mat-checkbox (click)="onClickMorningBirds()">
+    <i class="fas fa-dove"></i>  아침 새소리
+  </mat-checkbox>
 </section>
 
 <audio #rain loop>
@@ -34,4 +37,7 @@
 </audio>
 <audio #winterWave loop>
     <source [src]="winterWaveAudio" type="audio/mpeg">
+</audio>
+<audio #morningBirds loop>
+    <source [src]="morningBirdsAudio" type="audio/mpeg">
 </audio>

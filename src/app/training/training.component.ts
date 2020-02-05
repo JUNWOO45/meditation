@@ -11,12 +11,14 @@ export class TrainingComponent {
   commuterTrainAudio = '../../assets/commuter_train.mp3';
   hairCutAudio = '../../assets/haircut.mp3';
   winterWaveAudio = '../../assets/winter_wave.mp3';
+  morningBirdsAudio = '../../assets/morning_birds.mp3';
 
   @ViewChild('rain', null) private clickedRain: ElementRef;
   @ViewChild('beach', null) private clickedBeach: ElementRef;
   @ViewChild('commuterTrain', null) private clickedCommuterTrain: ElementRef;
   @ViewChild('hairCut', null) private clickedHairCut: ElementRef;
   @ViewChild('winterWave', null) private clickedWinterWave: ElementRef;
+  @ViewChild('morningBirds', null) private clickedMorningBirds: ElementRef;
 
   constructor(private renderer: Renderer2) { }
 
@@ -46,5 +48,10 @@ export class TrainingComponent {
     this.clickedWinterWave.nativeElement.paused ?
     this.clickedWinterWave.nativeElement.play() :
     this.clickedWinterWave.nativeElement.pause()
+  }
+  onClickMorningBirds() {
+    this.clickedMorningBirds.nativeElement.paused ?
+    this.clickedMorningBirds.nativeElement.play() :
+    this.clickedMorningBirds.nativeElement.pause()
   }
 }
