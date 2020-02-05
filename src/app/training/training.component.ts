@@ -52,6 +52,6 @@ export class TrainingComponent {
   onClickMorningBirds() {
     this.clickedMorningBirds.nativeElement.paused ?
     this.clickedMorningBirds.nativeElement.play() :
-    this.clickedMorningBirds.nativeElement.pause()
+    this.clickedMorningBirds.nativeElement.pause();
   }
 }
