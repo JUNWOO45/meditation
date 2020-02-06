@@ -2,7 +2,9 @@
 
 @include mat-core();
 
-$primary: mat-palette($mat-indigo);
+$junwooblue: #03A9F4;
+
+$primary: mat-palette($junwooblue);
 $accent: mat-palette($mat-purple, A200, A100, A400);
 $warn: mat-palette($mat-red);
 $theme: mat-light-theme($primary, $accent, $warn);
@@ -18,9 +20,9 @@ $theme: mat-light-theme($primary, $accent, $warn);
 
   @include angular-material-theme($dark-theme);
   .mat-button-toggle-appearance-standard {
-    background-color: rgb(167, 167, 167);
+    background-color: #424242;
   }
   .mat-button-toggle-checked {
-    background-color: white;
+    background-color: rgb(212, 212, 212);
   }
 }

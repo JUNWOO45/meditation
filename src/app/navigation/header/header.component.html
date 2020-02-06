@@ -9,9 +9,9 @@
     </div>
     <div fxFlex fxLayoutAlign="flex-end" fxLayoutGap="10px" fxHide.xs>
         <a *ngIf="isAuth" routerLink="training">명상</a>
-        <a *ngIf="!isAuth" routerLink="signup">회원가입</a>
+        <!-- <a *ngIf="!isAuth" routerLink="signup">회원가입</a>
         <a *ngIf="!isAuth" routerLink="login">로그인</a>
-        <a *ngIf="isAuth" (click)="logout()">로그아웃</a>
+        <a *ngIf="isAuth" (click)="logout()">로그아웃</a> -->
         <mat-slide-toggle 
           [checked]="isDarkTheme | async" 
           (change)="toggleDarkTheme($event.checked)">
