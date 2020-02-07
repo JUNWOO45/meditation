@@ -21,11 +21,11 @@ export class HeaderComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit() {
-    console.log('this.isAuth : ', this.isAuth);
+    // console.log('this.isAuth : ', this.isAuth);
     this.isDarkTheme = this.themeService.isDarkTheme;
     this.authSubscription = this.authService.authChange.subscribe(authStatus => {
       this.isAuth = authStatus;
-      console.log('AFTER : ', this.isAuth);
+      // console.log('AFTER : ', this.isAuth);
     })
   }
 
@@ -42,6 +42,6 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.authSubscription.unsubscribe();
-    console.log('unsubscribed!!');
+    // console.log('unsubscribed!!');
   }
 }
