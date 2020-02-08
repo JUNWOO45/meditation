@@ -15,6 +15,7 @@ export class TrainingComponent {
   woodWithAxeAudio = '../../assets/wood_with_axe.mp3';
   campfireAudio = '../../assets/campfire.mp3';
   babblingStreamAudio = '../../assets/babbling_stream.mp3';
+  tentAudio = '../../assets/tent.mp3';
 
   @ViewChild('rain', null) private clickedRain: ElementRef;
   @ViewChild('beach', null) private clickedBeach: ElementRef;
@@ -25,6 +26,7 @@ export class TrainingComponent {
   @ViewChild('woodWithAxe', null) private clickedWoodWithAxe: ElementRef;
   @ViewChild('campfire', null) private clickedCampfire: ElementRef;
   @ViewChild('babblingStream', null) private clickedBabblingStream: ElementRef;
+  @ViewChild('tent', null) private clickedTent: ElementRef;
 
   constructor(private renderer: Renderer2) { }
 
@@ -74,5 +76,10 @@ export class TrainingComponent {
     this.clickedBabblingStream.nativeElement.paused ?
     this.clickedBabblingStream.nativeElement.play() :
     this.clickedBabblingStream.nativeElement.pause();
+  }
+  onClickedTent() {
+    this.clickedTent.nativeElement.paused ?
+    this.clickedTent.nativeElement.play() :
+    this.clickedTent.nativeElement.pause();
   }
 }
