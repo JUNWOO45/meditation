@@ -1,9 +1,9 @@
 <mat-sidenav-container 
   class="mat-app-background" 
   [ngClass]="{'dark-theme': isDarkTheme | async}">
-  <mat-sidenav #sidenav>
+  <!-- <mat-sidenav #sidenav>
     <app-sidebar (sidenavClosed)="sidenav.close()"></app-sidebar>
-  </mat-sidenav>
+  </mat-sidenav> -->
   <mat-sidenav-content>
     <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
     <main>
