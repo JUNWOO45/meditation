@@ -33,6 +33,10 @@
       <img src="../../assets/icon/wood_with_axe.svg">
     </mat-button-toggle>
   장작 패는 소리
+  <mat-button-toggle class="btn-toggle" (click)="onClickedCampfire()">
+      <img src="../../assets/icon/campfire.svg">
+    </mat-button-toggle>
+  장작 패는 소리
 </section>
 
 <audio #rain loop>
@@ -55,4 +59,7 @@
 </audio>
 <audio #woodWithAxe loop>
     <source [src]="woodWithAxeAudio" type="audio/mpeg">
+</audio>
+<audio #campfire loop>
+    <source [src]="campfireAudio" type="audio/mpeg">
 </audio>
