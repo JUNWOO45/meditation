@@ -19,9 +19,9 @@ $theme: mat-light-theme($primary, $accent, $warn);
 
   @include angular-material-theme($dark-theme);
   .mat-button-toggle-appearance-standard {
-    background-color: #424242;
+    background-color: #696969;
   }
   .mat-button-toggle-checked {
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(177, 177, 177);
   }
 }
