@@ -28,6 +28,11 @@
     <img src="../../assets/icon/commuter_train.svg">
   </mat-button-toggle>
   통근 기차 소리
+
+  <mat-button-toggle class="btn-toggle" (click)="onClickedWoodWithAxe()">
+      <img src="../../assets/icon/wood_with_axe.svg">
+    </mat-button-toggle>
+  장작 패는 소리
 </section>
 
 <audio #rain loop>
@@ -47,4 +52,7 @@
 </audio>
 <audio #morningBirds loop>
     <source [src]="morningBirdsAudio" type="audio/mpeg">
+</audio>
+<audio #woodWithAxe loop>
+    <source [src]="woodWithAxeAudio" type="audio/mpeg">
 </audio>
