@@ -4,25 +4,33 @@ mat-button-toggle-group {
 
 .toggle-btn-container {
   display: flex;
-  mat-button-toggle {
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-  
-    img{
-      width: 60px;
-      height: 60px;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .toggle-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+
+    mat-button-toggle {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+    
+      img{
+        width: 60px;
+        height: 60px;
+      }
     }
 
+    .sound-explanation {
+      width: 60px;
+    }
   }
 }
 
 .myVideo {
     min-width: 100%;
     min-height: 100%;
-}
-
-.toggle-btn-container {
-  display: flex;
-  flex-direction: column;
 }
