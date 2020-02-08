@@ -70,6 +70,11 @@
       장작 타는 소리
     </span> -->
   </div>
+  <div class="toggle-btn">
+    <mat-button-toggle class="btn-toggle" (click)="onClickedBabblingStream()">
+        <img src="../../assets/icon/babbling_stream.svg">
+    </mat-button-toggle>
+  </div>
 </section>
 
 <audio #rain loop>
@@ -95,4 +100,7 @@
 </audio>
 <audio #campfire loop>
     <source [src]="campfireAudio" type="audio/mpeg">
+</audio>
+<audio #babblingStream loop>
+    <source [src]="babblingStreamAudio" type="audio/mpeg">
 </audio>
