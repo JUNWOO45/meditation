@@ -1,12 +1,11 @@
 @import '~@angular/material/theming';
+@import './custom-theme';
 
 @include mat-core();
 
-$junwooblue: #03A9F4;
-
-$primary: mat-palette($junwooblue);
-$accent: mat-palette($mat-purple, A200, A100, A400);
-$warn: mat-palette($mat-red);
+$primary: mat-palette($mat-junwoo-red);
+$accent: mat-palette($mat-junwoo-red, A200, A100, A400);
+$warn: mat-palette($mat-junwoo-red);
 $theme: mat-light-theme($primary, $accent, $warn);
 
 @include angular-material-theme($theme);

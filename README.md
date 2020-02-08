@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to meditation 👋</h1>
 <p>
   <a href="https://meditation-for-developer.firebaseapp.com/" target="_blank">
-    <img alt="Version" src="https://img.shields.io/badge/meditation-0.1.0-green">
+    <img alt="Version" src="https://img.shields.io/badge/meditation-0.2.0-red">
   </a>
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
@@ -37,6 +37,12 @@ npm run start
 ```
 
 ## Release Note
+
+0.2.0
+* 로그인, 회원가입 기능 삭제
+  * 기술을 위한 기능인지, 서비스를 위한 기능인지 고민을 하게 되는 계기
+  * 추후 로그인 기능을 사용하여 저장한 소리 조합을 불러오는 기능 등을 개발하기 전까진, 불편한 로그인 단계 삭제
+
 0.1.0
 * mp4 비디오 기능 삭제
 * 동시에 여러 오디오를 중첩시켜 청취할 수 있도록 변경
