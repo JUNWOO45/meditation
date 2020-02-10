@@ -17,16 +17,16 @@ export class TrainingComponent {
   babblingStreamAudio = '../../assets/babbling_stream.mp3';
   tentAudio = '../../assets/tent.mp3';
 
-  @ViewChild('rain', null) private clickedRain: ElementRef;
-  @ViewChild('beach', null) private clickedBeach: ElementRef;
-  @ViewChild('commuterTrain', null) private clickedCommuterTrain: ElementRef;
-  @ViewChild('hairCut', null) private clickedHairCut: ElementRef;
-  @ViewChild('winterWave', null) private clickedWinterWave: ElementRef;
-  @ViewChild('morningBirds', null) private clickedMorningBirds: ElementRef;
-  @ViewChild('woodWithAxe', null) private clickedWoodWithAxe: ElementRef;
-  @ViewChild('campfire', null) private clickedCampfire: ElementRef;
-  @ViewChild('babblingStream', null) private clickedBabblingStream: ElementRef;
-  @ViewChild('tent', null) private clickedTent: ElementRef;
+  @ViewChild('rain', { static: true }) private clickedRain: ElementRef;
+  @ViewChild('beach', { static: true }) private clickedBeach: ElementRef;
+  @ViewChild('commuterTrain', { static: true }) private clickedCommuterTrain: ElementRef;
+  @ViewChild('hairCut', { static: true }) private clickedHairCut: ElementRef;
+  @ViewChild('winterWave', { static: true }) private clickedWinterWave: ElementRef;
+  @ViewChild('morningBirds', { static: true }) private clickedMorningBirds: ElementRef;
+  @ViewChild('woodWithAxe', { static: true }) private clickedWoodWithAxe: ElementRef;
+  @ViewChild('campfire', { static: true }) private clickedCampfire: ElementRef;
+  @ViewChild('babblingStream', { static: true }) private clickedBabblingStream: ElementRef;
+  @ViewChild('tent', { static: true }) private clickedTent: ElementRef;
 
   constructor(private renderer: Renderer2) { }
 
