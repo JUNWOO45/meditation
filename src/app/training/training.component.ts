@@ -1,11 +1,11 @@
-import { Component, OnInit, ViewChild, ElementRef, Renderer2 } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, Renderer2, DoCheck } from '@angular/core';
 
 @Component({
   selector: 'app-training',
   templateUrl: './training.component.html',
   styleUrls: ['./training.component.less']
 })
-export class TrainingComponent {
+export class TrainingComponent implements DoCheck {
   rainAudio = '../../assets/rain.mp3';
   summerBeachAudio = '../../assets/summer_beach.mp3';
   commuterTrainAudio = '../../assets/commuter_train.mp3';
@@ -16,6 +16,9 @@ export class TrainingComponent {
   campfireAudio = '../../assets/campfire.mp3';
   babblingStreamAudio = '../../assets/babbling_stream.mp3';
   tentAudio = '../../assets/tent.mp3';
+  thunderAudio = '../../assets/thunder.mp3';
+
+  value: number = 50;
 
   @ViewChild('rain', { static: true }) private clickedRain: ElementRef;
   @ViewChild('beach', { static: true }) private clickedBeach: ElementRef;
@@ -27,6 +30,7 @@ export class TrainingComponent {
   @ViewChild('campfire', { static: true }) private clickedCampfire: ElementRef;
   @ViewChild('babblingStream', { static: true }) private clickedBabblingStream: ElementRef;
   @ViewChild('tent', { static: true }) private clickedTent: ElementRef;
+  @ViewChild('thunder', { static: true }) private clickedThunder: ElementRef;
 
   constructor(private renderer: Renderer2) { }
 
@@ -81,5 +85,10 @@ export class TrainingComponent {
     this.clickedTent.nativeElement.paused ?
     this.clickedTent.nativeElement.play() :
     this.clickedTent.nativeElement.pause();
+  }
+  onClickedThunder() {
+    this.clickedThunder.nativeElement.paused ?
+    this.clickedThunder.nativeElement.play() :
+    this.clickedThunder.nativeElement.pause();
   }
 }

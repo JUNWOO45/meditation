@@ -1,88 +1,74 @@
 <section class="toggle-btn-container">
+
   <div class="toggle-btn">
     <mat-button-toggle class="btn-toggle" (click)="onClickRain()">
       <img src="../../assets/icon/rain.svg">
     </mat-button-toggle>
-    <!-- <span class="sound-explanation">
-      빗소리
-    </span> -->
+    <mat-slider vertical min="0" max="100" [value]="value" step="1" [(ngModel)]="value" (input)="value = $event.value"></mat-slider>
   </div>
   
   <div class="toggle-btn">
     <mat-button-toggle class="btn-toggle" (click)="onClickWinterWave()">
       <img src="../../assets/icon/winter_wave.svg">
     </mat-button-toggle>
-    <!-- <span class="sound-explanation">
-      겨울바다 파도소리
-    </span> -->
   </div>
 
   <div class="toggle-btn">
     <mat-button-toggle class="btn-toggle" (click)="onClickBeach()">
       <img src="../../assets/icon/summer_beach.svg">
     </mat-button-toggle>
-    <!-- <span class="sound-explanation">
-      여름 해변
-    </span> -->
   </div>
 
   <div class="toggle-btn">
     <mat-button-toggle class="btn-toggle" (click)="onClickMorningBirds()">
       <img src="../../assets/icon/morning_birds.svg">
     </mat-button-toggle>
-    <!-- <span class="sound-explanation">
-      아침 새소리
-    </span> -->
   </div>
 
   <div class="toggle-btn">
     <mat-button-toggle class="btn-toggle" (click)="onClickHairCut()">
       <img src="../../assets/icon/haircut.svg">
     </mat-button-toggle>
-    <!-- <span class="sound-explanation">
-      머리 자르는 소리
-    </span> -->
   </div>
 
   <div class="toggle-btn">
     <mat-button-toggle class="btn-toggle" (click)="onClickCommuterTrain()">
       <img src="../../assets/icon/commuter_train.svg">
     </mat-button-toggle>
-    <!-- <span class="sound-explanation">
-      통근 기차 소리
-    </span> -->
   </div>
 
   <div class="toggle-btn">
     <mat-button-toggle class="btn-toggle" (click)="onClickedWoodWithAxe()">
       <img src="../../assets/icon/wood_with_axe.svg">
     </mat-button-toggle>
-    <!-- <span class="sound-explanation">
-      장작 패는 소리
-    </span> -->
   </div>
 
   <div class="toggle-btn">
     <mat-button-toggle class="btn-toggle" (click)="onClickedCampfire()">
         <img src="../../assets/icon/campfire.svg">
     </mat-button-toggle>
-    <!-- <span class="sound-explanation">
-      장작 타는 소리
-    </span> -->
   </div>
+
   <div class="toggle-btn">
     <mat-button-toggle class="btn-toggle" (click)="onClickedBabblingStream()">
         <img src="../../assets/icon/babbling_stream.svg">
     </mat-button-toggle>
   </div>
+
   <div class="toggle-btn">
     <mat-button-toggle class="btn-toggle" (click)="onClickedTent()">
         <img src="../../assets/icon/tent.svg">
     </mat-button-toggle>
   </div>
+
+  <div class="toggle-btn">
+    <mat-button-toggle class="btn-toggle" (click)="onClickedThunder()">
+        <img src="../../assets/icon/thunder.svg">
+    </mat-button-toggle>
+  </div>
 </section>
 
-<audio #rain loop>
+<audio #rain loop controls [volume]="value * 0.01">
     <source [src]="rainAudio" type="audio/mpeg">
 </audio>
 <audio #beach loop>
@@ -111,4 +97,7 @@
 </audio>
 <audio #tent loop>
     <source [src]="tentAudio" type="audio/mpeg">
+</audio>
+<audio #thunder loop>
+    <source [src]="thunderAudio" type="audio/mpeg">
 </audio>
