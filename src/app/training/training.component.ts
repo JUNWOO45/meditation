@@ -31,17 +31,17 @@ export class TrainingComponent {
   thunderVolume: number = 50;
 
 
-  @ViewChild('rain', { static: true }) private clickedRain: ElementRef;
-  @ViewChild('beach', { static: true }) private clickedBeach: ElementRef;
-  @ViewChild('commuterTrain', { static: true }) private clickedCommuterTrain: ElementRef;
-  @ViewChild('hairCut', { static: true }) private clickedHairCut: ElementRef;
-  @ViewChild('winterWave', { static: true }) private clickedWinterWave: ElementRef;
-  @ViewChild('morningBirds', { static: true }) private clickedMorningBirds: ElementRef;
-  @ViewChild('woodWithAxe', { static: true }) private clickedWoodWithAxe: ElementRef;
-  @ViewChild('campfire', { static: true }) private clickedCampfire: ElementRef;
-  @ViewChild('babblingStream', { static: true }) private clickedBabblingStream: ElementRef;
-  @ViewChild('tent', { static: true }) private clickedTent: ElementRef;
-  @ViewChild('thunder', { static: true }) private clickedThunder: ElementRef;
+  @ViewChild('rain', { static: true }) public clickedRain: ElementRef;
+  @ViewChild('beach', { static: true }) public clickedBeach: ElementRef;
+  @ViewChild('commuterTrain', { static: true }) public clickedCommuterTrain: ElementRef;
+  @ViewChild('hairCut', { static: true }) public clickedHairCut: ElementRef;
+  @ViewChild('winterWave', { static: true }) public clickedWinterWave: ElementRef;
+  @ViewChild('morningBirds', { static: true }) public clickedMorningBirds: ElementRef;
+  @ViewChild('woodWithAxe', { static: true }) public clickedWoodWithAxe: ElementRef;
+  @ViewChild('campfire', { static: true }) public clickedCampfire: ElementRef;
+  @ViewChild('babblingStream', { static: true }) public clickedBabblingStream: ElementRef;
+  @ViewChild('tent', { static: true }) public clickedTent: ElementRef;
+  @ViewChild('thunder', { static: true }) public clickedThunder: ElementRef;
 
   constructor(private renderer: Renderer2) { }
 
