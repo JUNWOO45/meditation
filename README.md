@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to meditation 👋</h1>
 <p>
   <a href="https://meditation-for-developer.firebaseapp.com/" target="_blank">
-    <img alt="Version" src="https://img.shields.io/badge/meditation-0.2.0-red">
+    <img alt="Version" src="https://img.shields.io/badge/meditation-0.3.0-yellow">
   </a>
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
