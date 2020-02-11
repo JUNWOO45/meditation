@@ -4,100 +4,209 @@
     <mat-button-toggle class="btn-toggle" (click)="onClickRain()">
       <img src="../../assets/icon/rain.svg">
     </mat-button-toggle>
-    <mat-slider vertical min="0" max="100" [value]="value" step="1" [(ngModel)]="value" (input)="value = $event.value"></mat-slider>
+    <mat-slider 
+      vertical 
+      min="0" 
+      max="100" 
+      [value]="rainVolume" 
+      step="1" 
+      [(ngModel)]="rainVolume" 
+      (input)="rainVolume = $event.value"
+      *ngIf="!this.clickedRain.nativeElement.paused">
+    </mat-slider>
   </div>
   
   <div class="toggle-btn">
     <mat-button-toggle class="btn-toggle" (click)="onClickWinterWave()">
       <img src="../../assets/icon/winter_wave.svg">
     </mat-button-toggle>
+    <mat-slider 
+      vertical 
+      min="0" 
+      max="100" 
+      [value]="winterWaveVolume" 
+      step="1" 
+      [(ngModel)]="winterWaveVolume" 
+      (input)="winterWaveVolume = $event.value"
+      *ngIf="!this.clickedWinterWave.nativeElement.paused">
+    </mat-slider>
   </div>
 
   <div class="toggle-btn">
     <mat-button-toggle class="btn-toggle" (click)="onClickBeach()">
       <img src="../../assets/icon/summer_beach.svg">
     </mat-button-toggle>
+    <mat-slider 
+      vertical 
+      min="0" 
+      max="100" 
+      [value]="summerBeachVolume" 
+      step="1" 
+      [(ngModel)]="summerBeachVolume" 
+      (input)="summerBeachVolume = $event.value"
+      *ngIf="!this.clickedBeach.nativeElement.paused">
+    </mat-slider>
   </div>
 
   <div class="toggle-btn">
     <mat-button-toggle class="btn-toggle" (click)="onClickMorningBirds()">
       <img src="../../assets/icon/morning_birds.svg">
     </mat-button-toggle>
+    <mat-slider 
+      vertical 
+      min="0" 
+      max="100" 
+      [value]="morningBirdsVolume" 
+      step="1" 
+      [(ngModel)]="morningBirdsVolume" 
+      (input)="morningBirdsVolume = $event.value"
+      *ngIf="!this.clickedMorningBirds.nativeElement.paused">
+    </mat-slider>
   </div>
 
   <div class="toggle-btn">
     <mat-button-toggle class="btn-toggle" (click)="onClickHairCut()">
       <img src="../../assets/icon/haircut.svg">
     </mat-button-toggle>
+    <mat-slider 
+      vertical 
+      min="0" 
+      max="100" 
+      [value]="hairCutVolume" 
+      step="1" 
+      [(ngModel)]="hairCutVolume" 
+      (input)="hairCutVolume = $event.value"
+      *ngIf="!this.clickedHairCut.nativeElement.paused">
+    </mat-slider>
   </div>
 
   <div class="toggle-btn">
     <mat-button-toggle class="btn-toggle" (click)="onClickCommuterTrain()">
       <img src="../../assets/icon/commuter_train.svg">
     </mat-button-toggle>
+    <mat-slider 
+      vertical 
+      min="0" 
+      max="100" 
+      [value]="commuterTrainVolume" 
+      step="1" 
+      [(ngModel)]="commuterTrainVolume" 
+      (input)="commuterTrainVolume = $event.value"
+      *ngIf="!this.clickedCommuterTrain.nativeElement.paused">
+    </mat-slider>
   </div>
 
   <div class="toggle-btn">
     <mat-button-toggle class="btn-toggle" (click)="onClickedWoodWithAxe()">
       <img src="../../assets/icon/wood_with_axe.svg">
     </mat-button-toggle>
+    <mat-slider 
+      vertical 
+      min="0" 
+      max="100" 
+      [value]="woodWithAxeVolume" 
+      step="1" 
+      [(ngModel)]="woodWithAxeVolume" 
+      (input)="woodWithAxeVolume = $event.value"
+      *ngIf="!this.clickedWoodWithAxe.nativeElement.paused">
+    </mat-slider>
   </div>
 
   <div class="toggle-btn">
     <mat-button-toggle class="btn-toggle" (click)="onClickedCampfire()">
         <img src="../../assets/icon/campfire.svg">
     </mat-button-toggle>
+    <mat-slider 
+      vertical 
+      min="0" 
+      max="100" 
+      [value]="campfireVolume" 
+      step="1" 
+      [(ngModel)]="campfireVolume" 
+      (input)="campfireVolume = $event.value"
+      *ngIf="!this.clickedCampfire.nativeElement.paused">
+    </mat-slider>
   </div>
 
   <div class="toggle-btn">
     <mat-button-toggle class="btn-toggle" (click)="onClickedBabblingStream()">
         <img src="../../assets/icon/babbling_stream.svg">
     </mat-button-toggle>
+    <mat-slider 
+      vertical 
+      min="0" 
+      max="100" 
+      [value]="babblingStreamVolume" 
+      step="1" 
+      [(ngModel)]="babblingStreamVolume" 
+      (input)="babblingStreamVolume = $event.value"
+      *ngIf="!this.clickedBabblingStream.nativeElement.paused">
+    </mat-slider>
   </div>
 
   <div class="toggle-btn">
     <mat-button-toggle class="btn-toggle" (click)="onClickedTent()">
         <img src="../../assets/icon/tent.svg">
     </mat-button-toggle>
+    <mat-slider 
+      vertical 
+      min="0" 
+      max="100" 
+      [value]="tentVolume" 
+      step="1" 
+      [(ngModel)]="tentVolume" 
+      (input)="tentVolume = $event.value"
+      *ngIf="!this.clickedTent.nativeElement.paused">
+    </mat-slider>
   </div>
 
   <div class="toggle-btn">
     <mat-button-toggle class="btn-toggle" (click)="onClickedThunder()">
         <img src="../../assets/icon/thunder.svg">
     </mat-button-toggle>
+    <mat-slider 
+      vertical 
+      min="0" 
+      max="100" 
+      [value]="thunderVolume" 
+      step="1" 
+      [(ngModel)]="thunderVolume" 
+      (input)="thunderVolume = $event.value"
+      *ngIf="!this.clickedThunder.nativeElement.paused">
+    </mat-slider>
   </div>
 </section>
 
-<audio #rain loop controls [volume]="value * 0.01">
+<audio #rain loop [volume]="rainVolume * 0.01">
     <source [src]="rainAudio" type="audio/mpeg">
 </audio>
-<audio #beach loop>
+<audio #beach loop [volume]="summerBeachVolume * 0.01">
     <source [src]="summerBeachAudio" type="audio/mpeg">
 </audio>
-<audio #commuterTrain loop>
+<audio #commuterTrain loop [volume]="commuterTrainVolume * 0.01">
     <source [src]="commuterTrainAudio" type="audio/mpeg">
 </audio>
-<audio #hairCut loop>
+<audio #hairCut loop [volume]="hairCutVolume * 0.01">
     <source [src]="hairCutAudio" type="audio/mpeg">
 </audio>
-<audio #winterWave loop>
+<audio #winterWave loop [volume]="winterWaveVolume * 0.01">
     <source [src]="winterWaveAudio" type="audio/mpeg">
 </audio>
-<audio #morningBirds loop>
+<audio #morningBirds loop [volume]="morningBirdsVolume * 0.01">
     <source [src]="morningBirdsAudio" type="audio/mpeg">
 </audio>
-<audio #woodWithAxe loop>
+<audio #woodWithAxe loop [volume]="woodWithAxeVolume * 0.01">
     <source [src]="woodWithAxeAudio" type="audio/mpeg">
 </audio>
-<audio #campfire loop>
+<audio #campfire loop [volume]="campfireVolume * 0.01">
     <source [src]="campfireAudio" type="audio/mpeg">
 </audio>
-<audio #babblingStream loop>
+<audio #babblingStream loop [volume]="babblingStreamVolume * 0.01">
     <source [src]="babblingStreamAudio" type="audio/mpeg">
 </audio>
-<audio #tent loop>
+<audio #tent loop [volume]="tentVolume * 0.01">
     <source [src]="tentAudio" type="audio/mpeg">
 </audio>
-<audio #thunder loop>
+<audio #thunder loop [volume]="thunderVolume * 0.01">
     <source [src]="thunderAudio" type="audio/mpeg">
 </audio>

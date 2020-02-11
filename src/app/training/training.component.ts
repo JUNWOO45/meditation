@@ -5,7 +5,7 @@ import { Component, OnInit, ViewChild, ElementRef, Renderer2, DoCheck } from '@a
   templateUrl: './training.component.html',
   styleUrls: ['./training.component.less']
 })
-export class TrainingComponent implements DoCheck {
+export class TrainingComponent {
   rainAudio = '../../assets/rain.mp3';
   summerBeachAudio = '../../assets/summer_beach.mp3';
   commuterTrainAudio = '../../assets/commuter_train.mp3';
@@ -18,7 +18,18 @@ export class TrainingComponent implements DoCheck {
   tentAudio = '../../assets/tent.mp3';
   thunderAudio = '../../assets/thunder.mp3';
 
-  value: number = 50;
+  rainVolume: number = 50;
+  summerBeachVolume: number = 50;
+  commuterTrainVolume: number = 50;
+  hairCutVolume: number = 50;
+  winterWaveVolume: number = 50;
+  morningBirdsVolume: number = 50;
+  woodWithAxeVolume: number = 50;
+  campfireVolume: number = 50;
+  babblingStreamVolume: number = 50;
+  tentVolume: number = 50;
+  thunderVolume: number = 50;
+
 
   @ViewChild('rain', { static: true }) private clickedRain: ElementRef;
   @ViewChild('beach', { static: true }) private clickedBeach: ElementRef;
