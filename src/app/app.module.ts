@@ -14,7 +14,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SidebarComponent } from './navigation/sidebar/sidebar.component';
 import { HeaderComponent } from './navigation/header/header.component';
 
-import { MatVideoModule } from 'mat-video';
 import { AuthService } from './auth/auth.service';
 
 import { AngularFireModule } from '@angular/fire';
@@ -33,13 +32,12 @@ import { environment } from '../environments/environment'
     HeaderComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
     FormsModule,
-    MatVideoModule,
     ReactiveFormsModule,
     // AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
